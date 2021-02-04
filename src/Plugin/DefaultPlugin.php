@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruudk\Payment\MollieBundle\Plugin;
+namespace Herrieb\Payment\MollieBundle\Plugin;
 
 use JMS\Payment\CoreBundle\Plugin\AbstractPlugin;
 use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
@@ -12,19 +12,19 @@ use JMS\Payment\CoreBundle\Plugin\Exception\FinancialException;
 use JMS\Payment\CoreBundle\Plugin\PluginInterface;
 use Psr\Log\LoggerInterface;
 use Omnipay\Mollie\Gateway;
-use Ruudk\Payment\MollieBundle\Exception\IdealIssuerTemporarilyUnavailableException;
-use Ruudk\Payment\MollieBundle\Exception\MollieTemporarilyUnavailableException;
-use Ruudk\Payment\MollieBundle\Form\BitcoinType;
-use Ruudk\Payment\MollieBundle\Form\CreditcardType;
-use Ruudk\Payment\MollieBundle\Form\IdealType;
-use Ruudk\Payment\MollieBundle\Form\InghomepayType;
-use Ruudk\Payment\MollieBundle\Form\KbcType;
-use Ruudk\Payment\MollieBundle\Form\MistercashType;
-use Ruudk\Payment\MollieBundle\Form\PaypalType;
-use Ruudk\Payment\MollieBundle\Form\PaysafecardType;
-use Ruudk\Payment\MollieBundle\Form\SofortType;
-use Ruudk\Payment\MollieBundle\Form\BanktransferType;
-use Ruudk\Payment\MollieBundle\Form\BelfiusType;
+use Herrieb\Payment\MollieBundle\Exception\IdealIssuerTemporarilyUnavailableException;
+use Herrieb\Payment\MollieBundle\Exception\MollieTemporarilyUnavailableException;
+use Herrieb\Payment\MollieBundle\Form\BitcoinType;
+use Herrieb\Payment\MollieBundle\Form\CreditcardType;
+use Herrieb\Payment\MollieBundle\Form\IdealType;
+use Herrieb\Payment\MollieBundle\Form\InghomepayType;
+use Herrieb\Payment\MollieBundle\Form\KbcType;
+use Herrieb\Payment\MollieBundle\Form\MistercashType;
+use Herrieb\Payment\MollieBundle\Form\PaypalType;
+use Herrieb\Payment\MollieBundle\Form\PaysafecardType;
+use Herrieb\Payment\MollieBundle\Form\SofortType;
+use Herrieb\Payment\MollieBundle\Form\BanktransferType;
+use Herrieb\Payment\MollieBundle\Form\BelfiusType;
 
 class DefaultPlugin extends AbstractPlugin
 {

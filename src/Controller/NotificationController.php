@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruudk\Payment\MollieBundle\Controller;
+namespace Herrieb\Payment\MollieBundle\Controller;
 
 use Doctrine\ORM\EntityManager;
 use JMS\Payment\CoreBundle\Model\PaymentInterface;

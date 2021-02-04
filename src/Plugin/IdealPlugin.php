@@ -1,11 +1,11 @@
 <?php
 
-namespace Ruudk\Payment\MollieBundle\Plugin;
+namespace Herrieb\Payment\MollieBundle\Plugin;
 
 use JMS\Payment\CoreBundle\Model\FinancialTransactionInterface;
 use JMS\Payment\CoreBundle\Model\PaymentInstructionInterface;
 use JMS\Payment\CoreBundle\Plugin\ErrorBuilder;
-use Ruudk\Payment\MollieBundle\Form\IdealType;
+use Herrieb\Payment\MollieBundle\Form\IdealType;
 
 class IdealPlugin extends DefaultPlugin
 {
@@ -24,7 +24,7 @@ class IdealPlugin extends DefaultPlugin
         $data = $instruction->getExtendedData();
 
         if(!$data->get('bank')) {
-            $errorBuilder->addDataError('data_Ruudk_Payment_MollieBundle_Form_IdealType.bank', 'form.error.bank_required');
+            $errorBuilder->addDataError('data_herrieb_Payment_MollieBundle_Form_IdealType.bank', 'form.error.bank_required');
         }
 
         if ($errorBuilder->hasErrors()) {
@@ -36,7 +36,7 @@ class IdealPlugin extends DefaultPlugin
      * @param FinancialTransactionInterface $transaction
      * @return array
      */
-    protected function getPurchaseParameters(FinancialTransactionInterface $transaction)
+    protected function getPurchaseParameters(FinancialTransactionInterface $transaction): array
     {
         /**
          * @var \JMS\Payment\CoreBundle\Model\ExtendedDataInterface $data

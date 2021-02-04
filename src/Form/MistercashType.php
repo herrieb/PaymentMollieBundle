@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruudk\Payment\MollieBundle\Form;
+namespace Herrieb\Payment\MollieBundle\Form;
 
 class MistercashType extends NamedType
 {
