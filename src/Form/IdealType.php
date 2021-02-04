@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruudk\Payment\MollieBundle\Form;
+namespace Herrieb\Payment\MollieBundle\Form;
 
 use Omnipay\Common\Issuer;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -49,9 +49,9 @@ class IdealType extends NamedType
         }
 
         $builder->add('bank', ChoiceType::class, array(
-            'label'             => 'ruudk_payment_mollie.ideal.bank.label',
+            'label'             => 'herrieb_payment_mollie.ideal.bank.label',
             'data'              => $defaultBank,
-            'placeholder'       => 'ruudk_payment_mollie.ideal.bank.empty_value',
+            'placeholder'       => 'herrieb_payment_mollie.ideal.bank.empty_value',
             'choices'           => $banks,
         ));
     }

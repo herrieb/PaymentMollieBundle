@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruudk\Payment\MollieBundle\Controller;
+namespace Herrieb\Payment\MollieBundle\Controller;
 
 use Doctrine\ORM\EntityManager;
 use JMS\Payment\CoreBundle\Model\PaymentInterface;
@@ -49,7 +49,7 @@ class NotificationController
      * @param Request $request
      * @return Response
      */
-    public function processNotification(Request $request)
+    public function processNotification(Request $request): Response
     {
         if($this->logger) {
             $this->logger->info(print_r($request->request->all(), true));
