@@ -49,7 +49,7 @@ class NotificationController
      * @param Request $request
      * @return Response
      */
-    public function processNotification(Request $request)
+    public function processNotification(Request $request): Response
     {
         if($this->logger) {
             $this->logger->info(print_r($request->request->all(), true));

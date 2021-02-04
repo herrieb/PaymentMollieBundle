@@ -1,14 +1,16 @@
 RuudkPaymentMollieBundle
 ========================
 
-A Symfony2 Bundle that provides access to the Mollie API. Based on JMSPaymentCoreBundle.
+An updated version of the RuudkPaymentMollieBundle By RuudK.
+
+A Symfony5 Bundle that provides access to the Mollie API. Based on JMSPaymentCoreBundle.
 
 ## Installation
 
 ### Step1: Require the package with Composer
 
 ````
-composer require ruudk/payment-mollie-bundle
+composer require herrieb/payment-mollie-bundle
 ````
 
 ### Step2: Enable the bundle
